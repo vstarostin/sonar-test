@@ -8,6 +8,12 @@ general:
   nativeBuild: true
 stages:
 steps:
+  checkmarxExecuteScan:
+    projectName: 'azure-demo-k8s-go'
+    preset: '100099'
+    # serverUrl: 'https://cx.wdf.sap.corp:443'
+    teamId: 'b75c657f-55c7-483c-ac76-9589f378fa75'
+    vulnerabilityThresholdLow: 0
   sapCallStagingService:
     url: 'https://staging.repositories.cloud.sap/stage/api'
     profile: 'group-882-default'
