@@ -7,6 +7,7 @@ resources:
   repositories:
   - repository: piper-pipeline-azure
     endpoint: github.tools.sap
+    ref: D032835-patch-2
     type: githubenterprise
     name: project-piper/piper-pipeline-azure
 
