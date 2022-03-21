@@ -8,6 +8,8 @@ general:
   nativeBuild: true
 stages:
 steps:
+  artifactPrepareVersion:
+    versioningType: cloud_noTag
   checkmarxExecuteScan:
     projectName: 'azure-demo-k8s-go'
     preset: '100099'
