@@ -5,6 +5,7 @@ general:
   vaultPipelineName: 'PIPELINE-9791'
   vaultServerUrl: 'https://vault.tools.sap'
   vaultNamespace: 'ies/hyperspace/pipelines'
+  whitesourceProductName: 'SHC - Piper'
   nativeBuild: true
 stages:
 steps:
