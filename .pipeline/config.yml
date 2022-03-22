@@ -2,6 +2,8 @@ general:
   buildTool: 'golang'
   pipelineOptimization: true
   productiveBranch: 'main'
+  owner: project-piper
+  repository: azure-demo-k8s-go
   vaultBasePath: 'piper/PIPELINE-GROUP-882'
   vaultPipelineName: 'PIPELINE-9791'
   vaultNamespace: 'ies/hyperspace/pipelines'
