@@ -1,5 +1,6 @@
 general:
   buildTool: 'golang'
+  pipelineOptimization: true
   productiveBranch: 'main'
   vaultBasePath: 'piper/PIPELINE-GROUP-882'
   vaultPipelineName: 'PIPELINE-9791'
