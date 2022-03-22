@@ -2,6 +2,16 @@
 
 trigger:
   - main
+  
+schedules:
+- cron: "*/5 * * * *"
+  #cron: "0 0 * * *"
+  displayName: pipeline optimization
+  branches:
+    include: 
+      - main
+  always: false # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
+
 
 resources:
   repositories:
