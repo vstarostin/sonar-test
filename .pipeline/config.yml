@@ -4,14 +4,13 @@ general:
   productiveBranch: 'main'
   vaultBasePath: 'piper/PIPELINE-GROUP-882'
   vaultPipelineName: 'PIPELINE-9791'
-  vaultServerUrl: 'https://vault.tools.sap'
   vaultNamespace: 'ies/hyperspace/pipelines'
   whitesourceProductName: 'SHC - Piper'
   nativeBuild: true
   
   # Jenkins-only
-  vaultAppRoleTokenCredentialsId: vault-approle-role-id-882
-  vaultAppRoleSecretTokenCredentialsId: vault-approle-secret-id-882
+  # vaultAppRoleTokenCredentialsId: vault-approle-role-id-882
+  # vaultAppRoleSecretTokenCredentialsId: vault-approle-secret-id-882
 stages:
 steps:
   artifactPrepareVersion:
