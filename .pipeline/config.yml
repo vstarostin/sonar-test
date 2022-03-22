@@ -22,6 +22,7 @@ steps:
     # serverUrl: 'https://cx.wdf.sap.corp:443'
     teamId: 'b75c657f-55c7-483c-ac76-9589f378fa75'
     vulnerabilityThresholdLow: 0
+    createResultIssue: true
   sapCallStagingService:
     url: 'https://staging.repositories.cloud.sap/stage/api'
     profile: 'group-882-default'
@@ -34,4 +35,5 @@ steps:
     pipelineId: '1e3816b1-99a5-4b19-8a0d-0deeb4b924c8'
   whitesourceExecuteScan:
     projectName: 'azure-demo-k8s-go'
+    createResultIssue: true
   
