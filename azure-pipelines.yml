@@ -4,8 +4,8 @@ trigger:
   - main
   
 schedules:
-- cron: "*/5 * * * *"
-  #cron: "0 0 * * *"
+- cron: "0 0 * * *"
+  # cron: "*/5 * * * *"
   displayName: pipeline optimization
   branches:
     include: 
