@@ -1,6 +1,6 @@
 general:
   buildTool: 'golang'
-  pipelineOptimization: true
+  # pipelineOptimization: true
   productiveBranch: 'main'
   owner: project-piper
   repository: azure-demo-k8s-go
