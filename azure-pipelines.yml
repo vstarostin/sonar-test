@@ -17,8 +17,7 @@ resources:
   repositories:
   - repository: piper-pipeline-azure
     endpoint: github.tools.sap
-    ref: jliempt/dockerOptionsFix
-    # dev_sapPipelineInit
+    ref: dev_sapPipelineInit
     type: githubenterprise
     name: project-piper/piper-pipeline-azure
 
