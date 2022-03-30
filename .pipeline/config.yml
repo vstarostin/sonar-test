@@ -1,5 +1,6 @@
 general:
   buildTool: 'golang'
+  githubApiUrl: 'https://github.tools.sap/api/v3'
   pipelineOptimization: true
   productiveBranch: 'main'
   owner: project-piper
@@ -9,6 +10,7 @@ general:
   vaultNamespace: 'ies/hyperspace/pipelines'
   whitesourceProductName: 'SHC - Piper'
   nativeBuild: true
+  verbose: true
   
   # Jenkins-only
   # vaultAppRoleTokenCredentialsId: vault-approle-role-id-882
