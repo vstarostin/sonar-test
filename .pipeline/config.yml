@@ -1,5 +1,6 @@
 general:
   buildTool: 'golang'
+  createResultIssue: true
   githubApiUrl: 'https://github.tools.sap/api/v3'
   pipelineOptimization: true
   productiveBranch: 'main'
