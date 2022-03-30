@@ -25,7 +25,6 @@ steps:
     # serverUrl: 'https://cx.wdf.sap.corp:443'
     teamId: 'b75c657f-55c7-483c-ac76-9589f378fa75'
     vulnerabilityThresholdLow: 0
-    createResultIssue: true
   sapCallStagingService:
     url: 'https://staging.repositories.cloud.sap/stage/api'
     profile: 'group-882-default'
@@ -33,12 +32,8 @@ steps:
     #createBuildVersion: true
     #uploadChangeRequest: true
     ppmsID: '73554900100200018611'
-    createResultIssue: true
   sapCumulusUpload:
     pipelineId: '1e3816b1-99a5-4b19-8a0d-0deeb4b924c8'
   whitesourceExecuteScan:
-    createResultIssue: true
-    owner: project-piper
-    repository: azure-demo-k8s-go
     buildDescriptorFile: go.mod
   
