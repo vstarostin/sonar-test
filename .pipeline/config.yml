@@ -35,7 +35,8 @@ steps:
   sapCumulusUpload:
     pipelineId: '1e3816b1-99a5-4b19-8a0d-0deeb4b924c8'
   whitesourceExecuteScan:
-    dockerOptions: '-u 0'
     projectName: 'azure-demo-k8s-go'
     createResultIssue: true
+    owner: project-piper
+    repository: azure-demo-k8s-go
   
