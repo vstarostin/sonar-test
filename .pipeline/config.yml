@@ -11,7 +11,7 @@ general:
   vaultNamespace: 'ies/hyperspace/pipelines'
   whitesourceProductName: 'SHC - Piper'
   nativeBuild: true
-  verbose: true
+  verbose: false
   
   # Jenkins-only
   # vaultAppRoleTokenCredentialsId: vault-approle-role-id-882
