@@ -18,11 +18,8 @@ resources:
   - repository: piper-pipeline-azure
     endpoint: github.tools.sap
     #ref: dev_sapPipelineInit
-    ref: jliempt/customDefaults
     type: githubenterprise
     name: project-piper/piper-pipeline-azure
 
 extends:
   template: sap-piper-pipeline.yml@piper-pipeline-azure
-  parameters:
-    customDefaults: 'https://github.tools.sap/api/v3/repos/I557621/azure-demo-k8s-go/contents/.pipeline/custom_defaults.yaml'
