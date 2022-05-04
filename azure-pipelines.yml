@@ -23,5 +23,3 @@ resources:
 
 extends:
   template: sap-piper-pipeline.yml@piper-pipeline-azure
-  parameters:
-    manualConfirmationTimeoutMinutes: 60
