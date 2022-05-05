@@ -10,10 +10,10 @@ general:
   vaultPipelineName: 'PIPELINE-9791'
   vaultNamespace: 'ies/hyperspace/pipelines'
   whitesourceProductName: 'SHC - Piper'
-  nativeBuild: true
   verbose: false
   
   # Jenkins-only
+  # nativeBuild: true
   # vaultAppRoleTokenCredentialsId: vault-approle-role-id-882
   # vaultAppRoleSecretTokenCredentialsId: vault-approle-secret-id-882
 stages:
