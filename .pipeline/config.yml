@@ -17,6 +17,9 @@ general:
   # vaultAppRoleTokenCredentialsId: vault-approle-role-id-882
   # vaultAppRoleSecretTokenCredentialsId: vault-approle-secret-id-882
 stages:
+  Acceptance:
+    helmValues: 
+      - helm/azure-demo-k8s-go/values_acceptance.yaml
 steps:
   artifactPrepareVersion:
     versioningType: cloud_noTag
@@ -26,6 +29,10 @@ steps:
     # serverUrl: 'https://cx.wdf.sap.corp:443'
     teamId: 'b75c657f-55c7-483c-ac76-9589f378fa75'
     vulnerabilityThresholdLow: 0
+  kubernetesDeploy:
+    chartPath: helm/sample-k8s-node
+    deployTool: helm3
+    deploymentName: sample-k8s-node
   sapCallStagingService:
     url: 'https://staging.repositories.cloud.sap/stage/api'
     profile: 'group-882-default'

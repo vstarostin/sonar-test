@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "azure-demo-k8s-go.fullname" . }}-test-connection"
+  labels:
+    {{- include "azure-demo-k8s-go.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "azure-demo-k8s-go.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
