@@ -30,8 +30,8 @@ steps:
     url: 'https://staging.repositories.cloud.sap/stage/api'
     profile: 'group-882-default'
   sapCheckPPMSCompliance:
-    #createBuildVersion: true
-    #uploadChangeRequest: true
+    createBuildVersion: true
+    uploadChangeRequest: true
     ppmsID: '73554900100200018611'
   sapCumulusUpload:
     pipelineId: '1e3816b1-99a5-4b19-8a0d-0deeb4b924c8'
