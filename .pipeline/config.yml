@@ -1,5 +1,6 @@
 general:
   buildTool: 'golang'
+  containerImageName: 'azure-demo-k8s-go'
   createResultIssue: true
   githubApiUrl: 'https://github.tools.sap/api/v3'
   pipelineOptimization: true
@@ -17,9 +18,15 @@ general:
   # vaultAppRoleTokenCredentialsId: vault-approle-role-id-882
   # vaultAppRoleSecretTokenCredentialsId: vault-approle-secret-id-882
 stages:
+  Build:
+    kanikoExecute: true
   Acceptance:
     helmValues: 
       - helm/azure-demo-k8s-go/values_acceptance.yaml
+  Performance:
+    kubernetesDeploy: false
+  Release:
+    kubernetesDeploy: false
 steps:
   artifactPrepareVersion:
     versioningType: cloud_noTag
