@@ -8,4 +8,5 @@ ingress:
   hosts:
     - host: azure-demo-k8s-go.ingress.jwl5c5xfg1.piper-cd.shoot.canary.k8s-hana.ondemand.com
       paths: 
-        - /
+        - path: /
+          pathType: Prefix
