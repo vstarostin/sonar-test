@@ -1,4 +1,4 @@
-# Default values for Acceptance stage of sample-k8s-node.
+# Default values for Acceptance stage of azure-demo-k8s-go.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 

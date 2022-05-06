@@ -37,9 +37,9 @@ steps:
     teamId: 'b75c657f-55c7-483c-ac76-9589f378fa75'
     vulnerabilityThresholdLow: 0
   kubernetesDeploy:
-    chartPath: helm/sample-k8s-node
+    chartPath: helm/azure-demo-k8s-go
     deployTool: helm3
-    deploymentName: sample-k8s-node
+    deploymentName: azure-demo-k8s-go
   sapCallStagingService:
     url: 'https://staging.repositories.cloud.sap/stage/api'
     profile: 'group-882-default'
