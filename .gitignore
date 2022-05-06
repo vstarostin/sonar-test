@@ -28,3 +28,6 @@ hs_err*
 .vscode
 
 *.db
+
+azure-demo-k8s-go
+azure-demo-k8s-go.exe

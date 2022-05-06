@@ -19,6 +19,11 @@ func main() {
 	users := types.DefaultUsers()
 
 	r := gin.Default()
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "alive",
+		})
+	})
 	r.GET("/users", func(c *gin.Context) {
 		c.JSON(200, users)
 	})
