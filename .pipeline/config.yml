@@ -21,7 +21,7 @@ stages:
   Build:
     kanikoExecute: true
     helmExecute: true
-    chartPath: helm/azure-demo-k8s-go/Chart.yaml
+    chartPath: helm/azure-demo-k8s-go
   Acceptance:
     helmValues: 
       - helm/azure-demo-k8s-go/values_acceptance.yaml
