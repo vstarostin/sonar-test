@@ -20,6 +20,7 @@ general:
 stages:
   Build:
     kanikoExecute: true
+    helmExecute: true
   Acceptance:
     helmValues: 
       - helm/azure-demo-k8s-go/values_acceptance.yaml
@@ -30,6 +31,8 @@ stages:
 steps:
   artifactPrepareVersion:
     versioningType: cloud_noTag
+    additionalTargetTools:
+    - helm
   checkmarxExecuteScan:
     projectName: 'azure-demo-k8s-go'
     preset: '100099'
