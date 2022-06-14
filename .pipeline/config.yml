@@ -19,6 +19,7 @@ general:
   # vaultAppRoleSecretTokenCredentialsId: vault-approle-secret-id-882
 stages:
   Build:
+    sonarExecuteScan: true
     kanikoExecute: true
     helmExecute: true
     chartPath: helm/azure-demo-k8s-go
