@@ -56,4 +56,5 @@ steps:
     pipelineId: '1e3816b1-99a5-4b19-8a0d-0deeb4b924c8'
   whitesourceExecuteScan:
     buildDescriptorFile: go.mod
+    cvssSeverityLimit: 10
   
