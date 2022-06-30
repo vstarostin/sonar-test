@@ -53,7 +53,7 @@ steps:
     uploadChangeRequest: true
     ppmsID: '73554900100200018611'
   sapCumulusUpload:
-    pipelineId: '1e3816b1-99a5-4b19-8a0d-0deeb4b924c8'
+    pipelineId: '38e5e5d7-b86f-4a4d-902d-fe2e36d4eefc'
   sonarExecuteScan:
     serverUrl: 'https://sonar.tools.sap'
   whitesourceExecuteScan:
