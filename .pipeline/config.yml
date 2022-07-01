@@ -51,7 +51,7 @@ steps:
   sapCheckPPMSCompliance:
     createBuildVersion: true
     uploadChangeRequest: true
-    ppmsID: '73554900100200018611'
+    ppmsID: '73555000100200012682'
   sapCumulusUpload:
     pipelineId: '38e5e5d7-b86f-4a4d-902d-fe2e36d4eefc'
   sonarExecuteScan:
