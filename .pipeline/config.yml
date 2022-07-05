@@ -35,6 +35,8 @@ steps:
     versioningType: cloud_noTag
     additionalTargetTools:
     - helm
+  golangBuild:
+    createBOM: true
   checkmarxExecuteScan:
     projectName: 'azure-demo-k8s-go'
     preset: '100099'
