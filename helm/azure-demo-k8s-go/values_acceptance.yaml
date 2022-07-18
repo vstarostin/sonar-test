@@ -6,7 +6,7 @@ replicaCount: 1
 
 ingress:
   hosts:
-    - host: azure-demo-k8s-go.ingress.jwl5c5xfg1.piper-cd.shoot.canary.k8s-hana.ondemand.com
+    - host: azure-demo-k8s-go.ingress.piper-k8s-gcp.piper-cd.shoot.canary.k8s-hana.ondemand.com
       paths: 
         - path: /
           pathType: Prefix
