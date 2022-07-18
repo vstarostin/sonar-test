@@ -26,6 +26,8 @@ stages:
   Acceptance:
     helmValues: 
       - helm/azure-demo-k8s-go/values_acceptance.yaml
+    containerRegistrySecret:
+      - regsecret
   Performance:
     kubernetesDeploy: false
   Release:
