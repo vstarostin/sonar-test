@@ -3,7 +3,7 @@ general:
   containerImageName: 'azure-demo-k8s-go'
   createResultIssue: true
   githubApiUrl: 'https://github.tools.sap/api/v3'
-  pipelineOptimization: true
+  pipelineOptimization: false
   productiveBranch: 'main'
   owner: project-piper
   repository: azure-demo-k8s-go
