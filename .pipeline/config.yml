@@ -27,7 +27,7 @@ stages:
     helmValues: 
       - helm/azure-demo-k8s-go/values_acceptance.yaml
     # Providing this as a secret with default name is already present in cluster
-    containerRegistrySecret: 'regsecretGo'
+    containerRegistrySecret: 'regsecretgo'
   Performance:
     kubernetesDeploy: false
   Release:
