@@ -40,6 +40,8 @@ stages:
     kubernetesDeploy: true
     # this secret should be already present in the above namespace
     containerRegistrySecret: 'regsecretgo'
+    # hardocode url for release . 
+    containerRegistryUrl: 'https://deploy-releases-hyperspace-docker.common.repositories.cloud.sap'
 steps:
   artifactPrepareVersion:
     versioningType: cloud_noTag
