@@ -24,14 +24,22 @@ stages:
     helmExecute: true
     chartPath: helm/azure-demo-k8s-go
   Acceptance:
+    namespace: 'go-acceptance'
     helmValues: 
       - helm/azure-demo-k8s-go/values_acceptance.yaml
-    # Providing this as a secret with default name is already present in cluster
+    # Providing this, as a secret with default name is already present in cluster
+    # this secret will be created on the fly by go step
     containerRegistrySecret: 'regsecretgo'
   Performance:
     kubernetesDeploy: false
   Release:
-    kubernetesDeploy: false
+    # Make sure namespace exists in the cluster
+    namespace: 'go-release'
+    helmValues:
+      - helm/azure-demo-k8s-go/values_release.yaml
+    kubernetesDeploy: true
+    # this secret should be already present in the above namespace
+    containerRegistrySecret: 'regsecretgo'
 steps:
   artifactPrepareVersion:
     versioningType: cloud_noTag
