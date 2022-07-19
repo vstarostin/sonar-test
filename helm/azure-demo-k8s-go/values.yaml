@@ -83,3 +83,7 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+secret:
+  name: ""
+  dockerconfigjson: <base64 dockerconfigjson>
