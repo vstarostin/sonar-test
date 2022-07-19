@@ -8,7 +8,7 @@ It contains an example Go application with following attributes:
 - WhiteSource scan of application
 - Checkmarx scan of the application
 
-- Deployment to Kubernetes using helmExecute piper step
+- Deployment to Kubernetes using helmExecute piper step in Acceptance and Release stages 
 
 
 ### Pipeline
