@@ -3,7 +3,9 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-
+#secret made true to access secret.yaml
+secret:
+  enabled: true
 ingress:
   hosts:
     - host: azure-demo-k8s-go.ingress.piper-k8s-gcp.piper-cd.shoot.canary.k8s-hana.ondemand.com
