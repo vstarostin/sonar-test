@@ -1,0 +1,15 @@
+# Default values for Release stage of sample-k8s-gradle.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+# secret is set to false as it should be already available in the cluster
+secret:
+  enabled: false
+ingress:
+  enabled: true
+  hosts:
+    - host: azure-demo-k8s-go.ingress.piper-k8s-gcp.piper-cd.shoot.canary.k8s-hana.ondemand.com
+      paths:
+        - path: /
+          pathType: Prefix
