@@ -1,9 +1,9 @@
 linters:
   disable:
-    - errcheck
-    - ineffassign
-    - unused
-    - varcheck
-    - staticcheck
-    - deadcode
+#     - errcheck
+#     - ineffassign
+#     - unused
+#     - varcheck
+#     - staticcheck
+#     - deadcode
     
