@@ -46,7 +46,9 @@ steps:
     additionalTargetTools:
     - helm
   golangBuild:
-    createBOM: true
+    createBOM: false
+    runTests: false
+    reportCoverage: false
     runLinter: true
   checkmarxExecuteScan:
     projectName: 'azure-demo-k8s-go'
