@@ -7,21 +7,19 @@ general:
   productiveBranch: 'main'
   owner: project-piper
   repository: azure-demo-k8s-go
-  vaultBasePath: 'piper/PIPELINE-GROUP-882'
-  vaultPipelineName: 'PIPELINE-9791'
+  vaultBasePath: 'piper/PIPELINE-GROUP-2668'
+  vaultPipelineName: 'PIPELINE-13913'
+  vaultServerUrl: 'https://vault.tools.sap'
   vaultNamespace: 'ies/hyperspace/pipelines'
-  whitesourceProductName: 'SHC - Piper'
-  verbose: false
+  nativeBuild: true
+  verbose: true
   
-  # Jenkins-only
-  # nativeBuild: true
-  vaultAppRoleTokenCredentialsId: vault-approle-role-id-882
-  vaultAppRoleSecretTokenCredentialsId: vault-approle-secret-id-882
 stages:
   Build:
     sonarExecuteScan: true
-    kanikoExecute: true
-    helmExecute: true
+    karmaExecuteTests: false
+    kanikoExecute: false
+    helmExecute: false
     chartPath: helm/azure-demo-k8s-go
   Acceptance:
     namespace: 'go-acceptance'
@@ -49,6 +47,7 @@ steps:
     - helm
   golangBuild:
     createBOM: true
+    runLinter: true
   checkmarxExecuteScan:
     projectName: 'azure-demo-k8s-go'
     preset: '100099'
@@ -61,13 +60,13 @@ steps:
     deploymentName: azure-demo-k8s-go
   sapCallStagingService:
     url: 'https://staging.repositories.cloud.sap/stage/api'
-    profile: 'group-882-default'
-#   sapCheckPPMSCompliance:
-#     createBuildVersion: true
-#     uploadChangeRequest: true
-#     ppmsID: '73555000100200012682'
+    profile: 'group-2668-default'
+  sapCheckPPMSCompliance:
+    createBuildVersion: true
+    uploadChangeRequest: true
+    ppmsID: '73555000100200012682'
   sapCumulusUpload:
-    pipelineId: '1e3816b1-99a5-4b19-8a0d-0deeb4b924c8'
+     pipelineId: '95f1e305-00a6-4399-a0c8-4268041ab576'
   sonarExecuteScan:
     serverUrl: 'https://sonar.tools.sap'
   whitesourceExecuteScan:

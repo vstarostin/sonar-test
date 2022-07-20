@@ -17,7 +17,7 @@ resources:
   repositories:
   - repository: piper-pipeline-azure
     endpoint: github.tools.sap
-    # ref: jliempt/confirmTimeout
+    ref: jliempt/piperBranch
     type: githubenterprise
     name: project-piper/piper-pipeline-azure
 
