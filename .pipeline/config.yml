@@ -50,28 +50,28 @@ steps:
     runTests: false
     reportCoverage: false
     runLinter: true
-  checkmarxExecuteScan:
-    projectName: 'azure-demo-k8s-go'
-    preset: '100099'
-    # serverUrl: 'https://cx.wdf.sap.corp:443'
-    teamId: 'b75c657f-55c7-483c-ac76-9589f378fa75'
-    vulnerabilityThresholdLow: 0
-  kubernetesDeploy:
-    chartPath: helm/azure-demo-k8s-go
-    deployTool: helm3
-    deploymentName: azure-demo-k8s-go
+#   checkmarxExecuteScan:
+#     projectName: 'azure-demo-k8s-go'
+#     preset: '100099'
+#     # serverUrl: 'https://cx.wdf.sap.corp:443'
+#     teamId: 'b75c657f-55c7-483c-ac76-9589f378fa75'
+#     vulnerabilityThresholdLow: 0
+#   kubernetesDeploy:
+#     chartPath: helm/azure-demo-k8s-go
+#     deployTool: helm3
+#     deploymentName: azure-demo-k8s-go
   sapCallStagingService:
     url: 'https://staging.repositories.cloud.sap/stage/api'
     profile: 'group-2668-default'
-  sapCheckPPMSCompliance:
-    createBuildVersion: true
-    uploadChangeRequest: true
-    ppmsID: '73555000100200012682'
+#   sapCheckPPMSCompliance:
+#     createBuildVersion: true
+#     uploadChangeRequest: true
+#     ppmsID: '73555000100200012682'
   sapCumulusUpload:
      pipelineId: '95f1e305-00a6-4399-a0c8-4268041ab576'
   sonarExecuteScan:
     serverUrl: 'https://sonar.tools.sap'
-  whitesourceExecuteScan:
-    buildDescriptorFile: go.mod
-    cvssSeverityLimit: 10
+#   whitesourceExecuteScan:
+#     buildDescriptorFile: go.mod
+#     cvssSeverityLimit: 10
   
