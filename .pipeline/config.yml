@@ -3,7 +3,7 @@ general:
   containerImageName: 'azure-demo-k8s-go'
   createResultIssue: true
   githubApiUrl: 'https://github.tools.sap/api/v3'
-  pipelineOptimization: false
+  pipelineOptimization: true
   productiveBranch: 'main'
   owner: project-piper
   repository: azure-demo-k8s-go
@@ -21,25 +21,25 @@ stages:
     kanikoExecute: false
     helmExecute: false
     chartPath: helm/azure-demo-k8s-go
-  Acceptance:
-    namespace: 'go-acceptance'
-    helmValues: 
-      - helm/azure-demo-k8s-go/values_acceptance.yaml
+#   Acceptance:
+#     namespace: 'go-acceptance'
+#     helmValues: 
+#       - helm/azure-demo-k8s-go/values_acceptance.yaml
     # Providing this, as a secret with default name is already present in cluster
     # this secret will be created on the fly by go step
-    containerRegistrySecret: 'regsecretgo'
-  Performance:
-    kubernetesDeploy: false
-  Release:
+#     containerRegistrySecret: 'regsecretgo'
+#   Performance:
+#     kubernetesDeploy: false
+#   Release:
     # Make sure namespace exists in the cluster
-    namespace: 'go-release'
-    helmValues:
-      - helm/azure-demo-k8s-go/values_release.yaml
-    kubernetesDeploy: true
+#     namespace: 'go-release'
+#     helmValues:
+#       - helm/azure-demo-k8s-go/values_release.yaml
+#     kubernetesDeploy: true
     # this secret should be already present in the above namespace
-    containerRegistrySecret: 'regsecretgo'
+#     containerRegistrySecret: 'regsecretgo'
     # hardocode url for release . 
-    containerRegistryUrl: 'https://deploy-releases-hyperspace-docker.common.repositories.cloud.sap'
+#     containerRegistryUrl: 'https://deploy-releases-hyperspace-docker.common.repositories.cloud.sap'
 steps:
   artifactPrepareVersion:
     versioningType: cloud_noTag
