@@ -3,21 +3,12 @@
 trigger:
   - main
   
-schedules:
-- cron: "0 0 * * *"
-  # cron: "*/5 * * * *"
-  displayName: pipeline optimization
-  branches:
-    include: 
-      - main
-  always: false # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
-
 
 resources:
   repositories:
   - repository: piper-pipeline-azure
     endpoint: github.tools.sap
-    ref: jliempt/piperBranch
+    ref: vstarostin/piperBranch
     type: githubenterprise
     name: project-piper/piper-pipeline-azure
 
