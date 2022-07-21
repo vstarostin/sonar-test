@@ -28,7 +28,9 @@ stages:
     # Providing this, as a secret with default name is already present in cluster
     # this secret will be created on the fly by go step
 #     containerRegistrySecret: 'regsecretgo'
-#   Performance:
+  Performance:
+    terraformExecute: false
+    sapDownloadArtifact: false
 #     kubernetesDeploy: false
 #   Release:
     # Make sure namespace exists in the cluster
