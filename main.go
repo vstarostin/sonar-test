@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
 
@@ -31,6 +32,22 @@ func main() {
 	users = types.DefaultUsers()
 	users = types.DefaultUsers()
 	users = types.DefaultUsers()
+
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
+	fmt.Printf("test")
 
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
